@@ -104,4 +104,4 @@ venv.bak/
 .mypy_cache/
 
 # editor specific
-.vs_code
+.vscode
