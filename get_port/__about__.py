@@ -36,7 +36,7 @@ __all__ = [
     '__copyright__',
 ]
 
-__version__ = '0.0.3'
+__version__ = '0.0.4'
 __title__ = 'get-port'
 __summary__ = 'Get an available port. Checks first for preferred port in case its available, if not returns random.'
 __url__ = 'https://github.com/marinko-peso/get-port/'
