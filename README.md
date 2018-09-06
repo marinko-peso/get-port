@@ -2,8 +2,9 @@
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![license](https://img.shields.io/github/license/marinko-peso/get-port.svg)](https://github.com/marinko-peso/get-port/blob/master/LICENSE)
 [![Last Commit](https://img.shields.io/github/last-commit/marinko-peso/get-port.svg?maxAge=3600)](https://github.com/marinko-peso/get-port/commits/master)
+
 Get an available port. Checks first for prefered port in case its available, if not returns random.
-Python implementation of the idea by @sindresorhus: https://github.com/sindresorhus/get-port
+Python implementation of the [get-port](https://github.com/sindresorhus/get-port) idea by @[sindresorhus](https://github.com/sindresorhus/).
 
 
 ## Installation.
@@ -16,7 +17,25 @@ pip install get-port
 
 ## Usage.
 
-* Usage in code:
+Available in terminal:
+```sh
+get-port [prefered-port-optional]
+```
+
+Usage in code:
+```python
+# Gets the actual port. Send prefered_port to pick if available.
+from get_port import get_port
+port = get_port(prefered_port)
+
+# Check if port is available. Returns tuple: (Boolean, Dict)
+from get_port import port_available
+is_available = port_available(your_port)
+
+# Find random free port. Returns tuple: (Port, Dict)
+from get_port import find_free_port
+port = find_free_port()
+```
 
 
 ## License
