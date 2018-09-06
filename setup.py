@@ -1,5 +1,5 @@
 from setuptools import setup, find_packages
-from getport.__about__ import *
+from get_port.__about__ import *
 
 
 setup(

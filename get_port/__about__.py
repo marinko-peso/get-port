@@ -37,8 +37,8 @@ __all__ = [
 ]
 
 __version__ = '0.0.1'
-__title__ = 'getport'
-__summary__ = 'Get an available port'
+__title__ = 'get-port'
+__summary__ = 'Get an available port. Checks first for prefered port in case its available, if not returns random.'
 __url__ = 'https://github.com/marinko-peso/get-port/'
 __author__ = 'Marinko Peso'
 __email__ = 'marinko.peso@gmail.com'

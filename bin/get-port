@@ -1,0 +1,34 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import sys, argparse
+
+from get_port import get_port
+from get_port import __version__, __summary__
+
+
+class Style:
+    BOLD = '\033[1m'
+    OK = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    LINK = '\033[94m'
+    END = '\033[0m'
+
+
+def _display_port(prefered_port):
+    port = get_port(prefered_port)
+    print('-> {}{}{}{}'.format(Style.BOLD, Style.OK, port, Style.END))
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__summary__)
+    parser.add_argument('port', metavar='port', help='Prefered port to get if its available. Optional.', nargs='?', default=0)
+    parser.add_argument('-v', '--version', action='version', version=__version__)
+    args = parser.parse_args()
+
+    _display_port(int(args.port))
+
+
+if __name__ == '__main__':
+    main()
