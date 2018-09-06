@@ -4,12 +4,15 @@ import socket, errno
 from contextlib import closing
 
 
-def get_port(port):
+def get_port(port=None):
     """
     Try fetching desided port.
     If it fails, ask system for a free one.
     """
-    return None
+    if port and port_available(port)[0]:
+        return port
+    else:
+        return find_free_port()[0]
 
 
 def port_available(port):
@@ -48,7 +51,3 @@ def find_free_port():
             error = {'errno': e.errno, 'msg': str(e)}
 
         return port, error
-
-
-if __name__ == '__main__':
-    print(port_available(3306))
