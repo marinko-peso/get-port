@@ -22,9 +22,27 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-from __future__ import absolute_import
-from .__about__ import *
-from .scan import *
+import datetime
 
 
-__all__ = []
+__all__ = [
+    '__title__',
+    '__summary__',
+    '__url__',
+    '__version__',
+    '__author__',
+    '__email__',
+    '__license__',
+    '__copyright__',
+]
+
+__version__ = '0.0.1'
+__title__ = 'getport'
+__summary__ = 'Get an available port'
+__url__ = 'https://github.com/marinko-peso/get-port/'
+__author__ = 'Marinko Peso'
+__email__ = 'marinko.peso@gmail.com'
+__license__ = 'MIT'
+
+now = datetime.datetime.now()
+__copyright__ = '%s %s' % (now.year, __author__)
