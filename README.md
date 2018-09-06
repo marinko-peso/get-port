@@ -12,7 +12,7 @@ Python implementation of the [get-port](https://github.com/sindresorhus/get-port
 
 ## Installation.
 
-Available via PyPy.
+Available via PyPI.
 ```sh
 pip install get-port
 ```
