@@ -22,14 +22,14 @@ pip install get-port
 
 Available in terminal:
 ```sh
-get-port [prefered-port-optional]
+get-port [preferred-port-optional]
 ```
 
 Usage in code:
 ```python
-# Gets the actual port. Send prefered_port to pick if available.
+# Gets the actual port. Send preferred_port to pick if available.
 from get_port import get_port
-port = get_port(prefered_port)
+port = get_port(preferred_port)
 
 # Check if port is available. Returns tuple: (Boolean, Dict)
 from get_port import port_available
