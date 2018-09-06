@@ -24,4 +24,4 @@
 
 __all__ = []
 
-from scan import *
+import scan
