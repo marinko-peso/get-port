@@ -6,7 +6,7 @@
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/get-port.svg)](https://pypi.org/project/get-port/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-Get an available port. Checks first for prefered port in case its available, if not returns random.
+Get an available port. Checks first for preferred port in case its available, if not returns random.
 Python implementation of the [get-port](https://github.com/sindresorhus/get-port) idea by @[sindresorhus](https://github.com/sindresorhus/).
 
 
